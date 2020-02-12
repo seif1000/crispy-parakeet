@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+*{
+   font-family: 'Montserrat', sans-serif;
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+ 
+}
+.showcase{
+    width: 100%;
+    background: red;
+    position: relative;
+    height: 600px;
+    background: url("./image/white-volvo-semi-truck-on-side-of-road-2199293.jpg") ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.6);
+    padding: 1em;
+    
+}
+.showcase::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -80%;
+    width: 120%;
+    background: #3377ff;
+    height: 100%;
+    transform: skewX(45deg);
+    opacity: 0.9;
+   
+}
+.showcase .container{
+    position: relative;
+    width: 100%;
+    z-index: 10;
+}
+.showcase nav{
+    background: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+    margin: auto;
+    padding: 0 0.5em;  
+    height: 50px;
+    overflow: hidden;
+}
+nav .bars{
+   width: 30px;
+   height: 20px;
+   display: none;
+}
+nav .bars div{
+    height: 3px;
+    width: 100%;
+    background: #3377ff;
+    margin-bottom: 4px;;
+}
+.showcase .container nav .brand{
+    font-weight: bold;
+    margin-top: 1em;
+}
+.showcase .container nav .brand span{
+    color: #3377ff;
+}
+.showcase .container nav .navigation{
+    display: flex;
+    flex-direction:row;
+    padding: 1.2em;
+  
+
+}
+.showcase .container nav .navigation a{
+     text-decoration: none;
+     color: black;
+     padding: 0 0.5em;
+    
+}
+
+/* desc */
+.showcase .container .desc{
+    width: 60%;
+    margin: 7em auto 0;
+    color: white;
+    padding: 1em 1em;
+
+}
+h2{
+    font-weight: bold
+}
+.showcase .container .desc .days{
+    font-size: 20px;
+    padding: 0.5em 0;
+    font-weight: bold;
+
+}
+button{
+    padding: 1em 1.5em;
+    background: black;
+    color: white;
+    border: none;
+    outline: none;
+    margin-top: 1.5em;
+}
+
+/* Services */
+.services{
+    
+    width: 70%;
+    margin: auto;
+    padding: 1em;
+    margin-top: 2em;
+    text-align: center;
+}
+.services h3{
+    text-align: center;
+    width: 90%;
+    margin: auto;
+}
+
+.services .offers{
+    width: 100%;
+    margin: 1em auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1em;
+}
+.services .service{
+    width: 200px;
+    text-align: center;
+    margin-right: 1em;
+    margin-top: 1.5em;
+    padding: 1em 1.5em;
+}
+.services .service .image{
+    width: 50%;
+    margin: auto;
+    padding:1em 0.6em;
+    margin-bottom: 1em;
+    border:1px solid #3377ff;
+    border-radius: 50%;
+}
+
+/* contact */
+
+.contact{
+    width: 70%;
+    margin:2em auto;
+    background: #3377ff;
+    color: white;
+    text-align: center;
+    padding: 2em 1em;
+}
+.contact h4{
+    margin-bottom: 0.5em;
+}
+.contact form{
+    width: 60%;
+    margin: auto;
+    
+}
+.contact form  input{
+    width: 75%;padding: 0.7em 1.5em;
+  
+}
+
+
+/* customer */
+
+.customer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.8em;
+}
+.customer div{
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    padding: 0 2em;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.6);
+    color: white;
+
+}
+.customer div p{
+    margin-top: 0.8em;
+}
+.cus{
+    background-image: url('./image/woman-wearing-black-cardigan-sitting-on-black-mesh-back-1181524.jpg');
+}
+.bus{
+    background-image: url('./image/white-dump-truck-near-pine-tress-during-daytime-93398.jpg');
+}
+
+/* depot */
+
+.depot{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+    height: 300px;
+    background: url("./image/aerial-view-photography-of-container-van-lot-1427107.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.6);
+ 
+}
+.depot:before{
+    position: absolute;
+    content: "";
+    right: -20%;
+    top: 0;
+    width: 60%;
+    height: 100%;
+    background:#3377ff;
+    overflow: hidden;
+    opacity: 0.8;
+   
+    transform: skew(-25deg);
+   
+}
+.adress{
+position: relative;
+z-index: 100%;
+color: white;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+.adress p{
+    margin-top: 0.5em;
+}
+
+footer{
+    width: 100%;
+    padding: 2em 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background:#002266;
+    color: white;
+
+
+}
+footer h4{
+    font-weight: normal;
+}
+footer div{
+    padding: 1em;
+}
+footer div h4{
+    margin-bottom: 0.6em;
+}
+
+footer div a{
+    text-decoration: none;
+    color: #3377ff;
+    font-size: 14px;
+}
+
+
+footer div:last-child{
+   display: flex;
+   flex-direction: column;
+   
+
+}
+.fas{
+    margin-bottom: 0.5em;
+}
+footer span{
+    font-size: 14px;
+    margin-left: 0.5em;
+    font-weight: normal;
+}
+footer div:last-child div{
+  display: flexbox;
+  flex-direction: row ;
+   
+}
+footer div:last-child div a{
+     margin-right: 0.5em;
+     padding: 0.5em 1em;
+     border: 1px solid#3377ff;
+     
+  }
+
+  @media (max-width:750px){
+      .showcase{
+          padding: 1em 0;
+      }
+    /* .showcase nav{
+        width: 100%;
+        margin: auto;
+        padding: 0;
+    } */
+    .showcase::after{
+       
+        width: 110%;
+     
+       
+    }
+   .showcase nav{
+        padding: 1em;
+        transition: 0.5s ease-in-out;
+    }
+    .showcase .container nav .brand{
+     
+        margin-top: 0;
+    }
+    nav .bars{
+        display: block;
+    }
+    .showcase .container nav .navigation{
+       flex-direction: column;
+       margin-top: 1em;
+    
+      
+     
+    }
+    .showcase .container nav .navigation a{
+       margin-bottom: 0.5em;
+      
+     }
+    .showcase nav a{
+         font-size: 14px;
+         padding: 0 0.1em;
+         border: none;
+    }
+    .showcase .container .desc{
+        width: 100%;
+        padding: 0.5em;
+    }
+    .services{
+        width: 95%;
+        padding: 0.5em;
+    }
+    .contact{
+        width: 95%;
+        margin: auto;
+    }
+    .contact form input{
+        width: 90%;
+        margin-top: 0.6em;
+    }
+    footer, .customer,.depot{
+        flex-direction: column;
+    }
+  }

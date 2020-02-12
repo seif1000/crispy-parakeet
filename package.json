@@ -1,0 +1,16 @@
+{
+  "name": "home-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "homepage": "https://seif1000.github.io/ana",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d src"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gh-pages": "^2.2.0"
+  }
+}
